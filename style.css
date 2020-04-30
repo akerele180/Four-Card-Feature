@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: 'Poppins';
+	font-size:15px;	
+	max-width: 1440px;
+	background-color: hsl(0, 0%, 98%);
+}
+#header{
+	text-align: center;
+	margin: 0 auto;
+	max-width: 500;
+}
+.center {
+	max-width: 1120px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	margin-top: 30px;
+	justify-content: center;
+	/*align-items: center*/
+}
+h2 {
+	font-weight: 600;
+	text-shadow: 0px 1px 0px black;
+	margin-bottom: 20px;
+	font-size: 31px;
+}
+h1 {
+	text-align: center;
+	padding-top: 30px;
+	margin: 20px 0px 0px 0px;
+	color: #585656;	
+	font-weight: 400;
+}
+h4 {
+	font-weight: 600;
+	margin-bottom:15px;
+}
+p.different{
+	text-align: center; 
+	font-weight: normal;
+	color: hsl(229, 6%, 66%);
+	margin-bottom: 40px
+}
+p {
+	font-weight: lighter !important;
+	margin-bottom: 40px !important!
+	
+}
+.supervisor, .team-builder, .calculator, .karma {
+	padding: 20px;
+	height:240px;
+	width: 350px;
+	margin: 10px;
+	background-color: white; 
+	border:5px solid hsl(0, 0%, 98%);
+	border-radius: 8px;
+	box-shadow: 0 10px 20px #d0caca;
+}
+.supervisor{border-top-color: cyan;}
+.team-builder {border-top-color: hsl(0, 78%, 62%);}
+.calculator{border-top-color: hsl(212, 86%, 64%);}
+.karma {border-top-color: hsl(34, 97%, 64%);}
+.move {transform: translateY(130px);}
+img {
+	float: right;
+	margin-top:30px;
+	/*padding:15px;*/
+}
+p.attribution{font-size: 15px;
+padding:50px;}
+/*DEFINING THE ORIENTATION IF VIEWED ON MOBILE**/
+@media(max-width:600px)
+{
+	.move{transform: translateY(0);
+	}
+
+}
